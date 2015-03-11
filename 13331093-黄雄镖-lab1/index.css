@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.button {
+    background-color: #676767;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#info-bar {
+    border-radius: 50%;
+    background-color: #7E7E7E;
+    height: 130px;
+    width: 130px;
+    left: 40px;
+    bottom: 130px;
+    position: absolute;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#at-plus-container {
+    background-image: url("assets/images/atplus_white.png");
+    background-color: #9BA0D8;
+    background-size: 25px, 25px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 150px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+}
+
+#bottom-positioner {
+    width: 0;
+    height: 0;
+    top: -75px;
+    right: -60px;
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#at-plus-container:hover {
+    background-image: url("assets/images/atplus_green.png");
+    background-color: rgba(48, 63, 159, 1);
+    background-size: 42px, 42px;
+    width: 50px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+#at-plus-container:hover>* {
+    width: 190px;
+    height: 190px;
+    top: -75px;
+    left: -60px;
+    position: absolute;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+#at-plus-container:hover .button {
+    visibility: visible;
+    transition: 0.5s;
+}
+
+#at-plus-container:hover #info-bar {
+    visibility: visible;
+}
+
+.mask {
+    top: 47px;
+    right: 145px;
+    background-image: url("assets/images/nomask.png");
+}
+
+.history {
+    top:90px;
+    right: 155px;
+    background-image: url("assets/images/history.png");
+}
+
+.message {
+    top: 130px;
+    right: 145px;
+    background-image: url("assets/images/message.png");
+}
+
+.setting {
+    top: 153px;
+    left: 50px;
+    background-image: url("assets/images/setting.png");
+}
+
+.sign {
+    top: 150px;
+    left: 88px;
+    background-image: url("assets/images/signin.png");
+}
+
+.unread {
+    color: white;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    text-align: center;
+    width: 18px;
+    height: 18px;
+    left: 20px;
+    bottom: 20px;
+    font-size: 15px;
+}
+
+#control-ring li:hover {
+    background-color: rgba(48, 63, 159, 1);
+    transition: 0.5s;
+    transform: scale(1.2, 1.2);
+}
+
+.page {
+    position: relative;
+    font-weight: bold;
+    color: white;
+    left: 42px;
+}
+
+.page span {
+    padding-left: 5px;
+}
+
+.mine {
+    height: 23px;
+    left: 23px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+    color: #38CB95;
+    top: 15px;
+    line-height: 23px;
+}
+
+.user {
+    line-height: 25px;
+    top: 13px;
+    font-size: 22px;
+}
+
+.comment {
+    line-height: 25px;
+    top: 20px;
+    font-size: 38px;
+}
+
+.mine img {
+    position: relative;
+    top: 3px;
+}
+
+.mine span{
+    padding-left: 3px;
+    font-size: 23px;
+    font-weight: bold;
+}
